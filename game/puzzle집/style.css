@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&display=swap');
+
+//font-family: 'Baloo 2', cursive;
+//font-family: 'Bai Jamjuree', sans-serif;
+//font-family: 'Do Hyeon', sans-serif;
+
+body {
+  width: 1450px;
+  height: 850px;
+}
+
+.logo {
+position: absolute;
+width: 485px;
+height: 44px;
+left: 53px;
+top: 43px;
+font-family: 'Baloo 2', cursive;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 76px;
+
+color: rgba(0, 0, 0, 0.72);
+}
+
+.puzzle {
+position: absolute;
+width: 212px;
+height: 41px;
+left: 53px;
+top: 104px;
+font-family: 'Do Hyeon', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 45px;
+color: #8A9397;
+}
+
+body {
+  width: 1450px;
+  height: 850px;
+}
+
+.board {
+  position: absolute;
+  top: 40px;
+  left: 450px;
+  opacity: 0.3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.img1 {
+  position: absolute;
+  background: url("2-1.png");
+  width: 116px;
+  height: 116px;
+  z-index: 1;
+  top: 560px;
+  left: 350px;
+}
+
+.img2 {
+  position: absolute;
+  background: url("2-2.png");
+  width: 330px;
+  height: 166px;
+  z-index: 2;
+  top: 560px;
+  left: 450px;
+}
+
+.img3 {
+  position: absolute;
+  background: url("2-3.png");
+  width: 230px;
+  height: 116px;
+  z-index: 1;
+  top: 560px;
+  left: 550px;
+}
+
+.img4 {
+  position: absolute;
+  background: url("2-4.png");
+  width: 334px;
+  height: 168px;
+  z-index: 1;
+  top: 560px;
+  left: 650px;
+}
+
+.img5 {
+  position: absolute;
+  background: url("2-5.png");
+  width: 166px;
+  height: 164px;
+  z-index: 1;
+  top: 560px;
+  left: 750px;
+}
+
+.img6 {
+  position: absolute;
+  background: url("2-6.png");
+  width: 166px;
+  height: 82px;
+  z-index: 1;
+  top: 560px;
+  left: 850px;
+}
+
+.img7 {
+  position: absolute;
+  background: url("2-7.png");
+  width: 82px;
+  height: 164px;
+  z-index: 1;
+  top: 560px;
+  left: 900px;
+}

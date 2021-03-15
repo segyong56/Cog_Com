@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+
+</head>
+
+<body>
+
+    <body>
+        <div class="section">
+            <input type="radio" name="slide" id="slide01" checked>
+            <input type="radio" name="slide" id="slide02">
+            <input type="radio" name="slide" id="slide03">
+
+
+            <div class="slidewrap">
+                <ul class="slidelist">
+                    <li>
+                        <a class="slide1-1">
+                            <span class="span1" >1</span>
+                            <img src="tangram.png" alt="">
+                            <span class="text">칠교퍼즐</span>
+                            <button id="btn1-1" class="btn1">우주선</button>
+                            <button id="btn1-2" class="btn1">배</button>
+                            <button id="btn1-3" class="btn1">집</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="slide1-2">
+                            <span class="span1" >2</span>
+                            <span class="text">그림퍼즐</span>
+                            <img src="puzzle.png" alt="" >
+                            <button id="btn2-1" class="btn1">3 X 3</button>
+                            <button id="btn2-2" class="btn1">4 X 4</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="slide1-3">
+                            <span class="span1" >3</span>
+                            <img src="pixel-art.png" alt="">
+                            <span class="text">Picker-Color</span>
+                            <button id="btn3-1" class="btn1">10 X 10</button>
+                            <button id="btn3-2" class="btn1">11 X 11</button>
+                        </a>
+                    </li>
+                    <div class="slide-control">
+                        <div class="control01">
+                            <label for="slide01" class="left">
+                                <i class="fas fa-chevron-circle-left left"></i>
+                            </label>
+                            <label for="slide02" class="right">
+                                <i class="fas fa-chevron-circle-right right"></i>
+                            </label>
+                        </div>
+                        <div class="control02">
+                            <label for="slide01" class="left">
+                                <i class="fas fa-chevron-circle-left left"></i>
+                            </label>
+                            <label for="slide03" class="right">
+                                <i class="fas fa-chevron-circle-right right"></i>
+                            </label>
+                        </div>
+                        <div class="control03">
+                            <label for="slide02" class="left">
+                                <i class="fas fa-chevron-circle-left left"></i>
+                            </label>
+                            <label for="slide01" class="right">
+                                <i class="fas fa-chevron-circle-right right"></i>
+                            </label>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+</html>

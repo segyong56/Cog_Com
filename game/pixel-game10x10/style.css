@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&display=swap');
+
+/*font-family: 'Baloo 2', cursive;
+//font-family: 'Bai Jamjuree', sans-serif;
+font-family: 'Do Hyeon', sans-serif;
+*/
+body {
+  width: 1450px;
+  height: 850px;
+}
+
+.logo {
+position: absolute;
+width: 485px;
+height: 44px;
+left: 53px;
+top: 43px;
+font-family: 'Baloo 2', cursive;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 76px;
+
+color: rgba(0, 0, 0, 0.72);
+}
+
+.game {
+position: absolute;
+width: 212px;
+height: 41px;
+left: 53px;
+top: 104px;
+font-family: 'Bai Jamjuree', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 45px;
+color: #8A9397;
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: repeat(10, 1fr);
+position: absolute;
+width: 505px;
+height: 505px;
+left: calc(50% - 505px/2 + 292.5px);
+top: 200px;
+cursor: pointer;
+}
+
+.image-co {
+position: absolute;
+width: 520px;
+height: 520px;
+top: 200px;
+left: calc(50% - 505px/2 - 281.5px);
+border: 1px solid black;
+}
+.color-picker {
+position: absolute;
+width: 200px;
+height: 38px;
+left: 670px;
+top: 49px;
+font-family: 'Baloo 2', cursive;
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 37px;
+/* identical to box height */
+color: #000000;
+}
+
+
+
+.next-btn{
+position: absolute;
+width: 226px;
+height: 50px;
+left: 632px;
+top: 750px;
+border: none;
+background: #18A0FB;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+font-family: Bai Jamjuree;
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 37px;
+color: #FFFFFF;
+cursor: pointer;
+}
+
+.grid{
+  width: 50px;
+  height: 50px;
+  border: 0.5px solid black;
+  border-collapse: collapse;
+}
+
+.controls-colors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.controls-color {
+  margin: 2px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.image {
+  width: 520px;
+  height: 520px;
+}
