@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 1450px;
+    height: 1000px;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+.brain {
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 45px;
+    left: 100px;
+  }
+  
+  .think {
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    top: 50px;
+    left: 160px;
+    font-weight: bold;
+  }
+  
+  .fa-home {
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 50px;
+    left: 1250px;
+    cursor: pointer;
+  }
+
+  .container {
+      position: absolute;
+      top: 200px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1200px;
+      height: 700px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+  }
+
+  .front {
+    position: relative;
+    left: 50px;
+    width: 200px;
+    height: 300px;
+    border: 3px solid white;
+    border-radius: 34px 3px 0 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  h1{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    color: white;
+    top:70px;
+  }
+
+  .click {
+    text-decoration: none;
+    padding: 10px;
+    border: 3px solid white;
+    color: black;
+    border-radius: 10px;
+    position: relative;
+    top: 170px;
+    left: 40px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .click:hover {
+    box-shadow: none;
+  }
