@@ -1,0 +1,329 @@
+slide css
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.section input[id*="slide"]{
+    display: none;
+}
+
+.section .slidewrap {
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.section .slidelist {
+    height: 100vh;
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.section .slidelist > li {
+    position: relative;
+    top: 100px;
+    height: 500px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .5s;
+}
+
+.section .slidelist > li > a {
+    display: block;
+    position: relative;
+}
+
+.section .section > li > a img {
+    width: 100%;
+}
+
+.section .slidelist label {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px;
+    cursor: pointer;
+}
+
+.section .slidelist .left {
+    left: 30px;
+    font-size: 100px;
+}
+
+.section .slidelist .right {
+    right: 30px;
+    font-size: 100px;
+}
+
+.slide1-1 {
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid black;
+    color: white;
+    background-size: 700px 450px;
+
+}
+
+.span1 {
+    position: absolute;
+    left: 685px;
+    text-align: center;
+    z-index: 2;
+    font-size: 200px;
+    text-shadow: 2px 2px 2px gray;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    z-index: 2;
+}
+
+img {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 350px;
+}
+
+#btn1 {
+    position: absolute;
+    top: 430px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#btn1:hover {
+    box-shadow: none;
+}
+
+.slide1-2 {
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid black;
+    color: white;
+    background-size: 700px 450px;
+}
+
+#btn2 {
+    position: relative;
+    top: 430px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#btn2:hover {
+    box-shadow: none;
+}
+
+.slide1-3 {
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid black;
+    color: white;
+    background-size: 700px 450px;
+}
+
+#btn3 {
+    position: relative;
+    top: 430px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#btn3:hover {
+    box-shadow: none;
+}
+
+.slide1-4 {
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid black;
+    color: white;
+    background-size: 700px 450px;
+}
+
+#btn4 {
+    position: relative;
+    top: 430px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#btn4:hover {
+    box-shadow: none;
+}
+
+.slide1-5 {
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid black;
+    color: white;
+    background-size: 700px 450px;
+}
+
+#btn5 {
+    position: relative;
+    top: 430px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#btn5:hover {
+    box-shadow: none;
+}
+
+.slide1-6 {
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid black;
+    color: white;
+    background-size: 700px 450px;
+}
+
+#btn6 {
+    position: relative;
+    top: 430px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#btn6:hover {
+    box-shadow: none;
+}
+
+.slide1-7 {
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid black;
+    color: white;
+    background-size: 700px 450px;
+}
+
+#btn7 {
+    position: relative;
+    top: 430px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#btn7:hover {
+    box-shadow: none;
+}
+
+
+
+.section [id = "slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
+.section [id = "slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.section [id = "slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.section [id = "slide04"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+.section [id = "slide05"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-400%);}
+
+
+
+.section .slide-control [class*="control"] {display: none;}
+.section [id="slide01"]:checked ~ .slidewrap .control01 {display:block;}
+.section [id="slide02"]:checked ~ .slidewrap .control02 {display:block;}
+.section [id="slide03"]:checked ~ .slidewrap .control03 {display:block;}
+.section [id="slide04"]:checked ~ .slidewrap .control04 {display:block;}
+.section [id="slide05"]:checked ~ .slidewrap .control05 {display:block;}
+
+
+
