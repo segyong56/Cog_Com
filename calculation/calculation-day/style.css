@@ -1,0 +1,118 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    width: 100vh;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.quiz-box{
+    width: 600px;
+    height: 500px;
+    border: 2px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.timer{
+    position: relative;
+    top: 10px;
+    left: 500px;
+    width: 100px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 55px;
+}
+
+.timeLeft{
+    position: relative;
+    top: 10px;
+    left: 525px;
+    width: 50px;
+    height: 50px;
+}
+
+.question-box {
+    position: relative;
+    top: 20px;
+    width: 600px;
+    height: 100px;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 25px;
+    line-height: 100px;
+    font-weight: bold;
+    background-color: whitesmoke;
+}
+
+.answer-box {
+    position: relative;
+    top: 30px;
+    width: 600px;
+    height: 250;
+}
+
+.answer {
+    position: relative;
+    width: 600px;
+    height: 50px;
+    display: block;
+    z-index: 3;
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    line-height: 55px;
+    background-color: whitesmoke;
+}
+
+.correct {
+    background-color: green;
+    opacity: 0.6;
+    color: white;
+}
+
+.incorrect {
+    background-color: red;
+    opacity: 0.6;
+    color: white;
+}
+.disabled {
+    pointer-events: none;
+
+}
+#next {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 640px;
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+}
+
+.hide {
+    display: none;
+}
+
+.score {
+    position: relative;
+    top: 200px;
+    left: 50px;
+    font-size: 40px;
+    font-weight: bold;
+}
