@@ -1,0 +1,124 @@
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  width: 100vh;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+h3{
+  text-align: center;
+  position: relative;
+  top:100px;
+  font-size: 25px;
+}
+
+.img-areas{
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 150px;
+}
+
+img{
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.drag-areas{
+  position: absolute;
+  left: 50%;
+  top: 350px;
+  transform: translateX(-50%);
+  width: 650px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.area1 {
+  position: absolute;
+  margin: auto;
+  left: 50px;
+  width:150px;
+  height: 150px;
+  border: 3px solid black;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.area2 {
+  position: absolute;
+  left: 250px;
+  margin: auto;
+  width:150px;
+  height: 150px;
+  border: 3px solid black;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.area3 {
+  position: absolute;
+  left: 450px;
+  margin: auto;
+  width:150px;
+  height: 150px;
+  border: 3px solid black;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.score {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 140px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#next {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 550px;
+  width: 130px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#restart {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 300px;
+  width: 130px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
