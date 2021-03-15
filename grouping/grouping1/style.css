@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+h3{
+    position: relative;
+    top: 70px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.card-box {
+    position: absolute;
+    left: 50%;
+    top: 200px;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 300px;
+    
+}
+
+.drop-box {
+    position: absolute;
+    top: 550px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 150px;
+    display: flex;
+}
+
+.drop {
+    position: relative;
+    left: 40px;
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.drop:hover {
+    box-shadow: none;
+}
+
+.img {
+    position: relative;
+    left: 50px;
+    width: 200px;
+    height: 300px;
+}
+
+.score {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: gray;
+    font-size: 30px;
+    font-weight: bold;
+}
