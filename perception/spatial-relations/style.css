@@ -1,0 +1,109 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vh;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 250px;
+  width: 800px;
+  text-align: center;
+}
+
+h1 {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  top: 150px;
+}
+.p1{
+  margin: 30px;
+  font-size: 100px;
+  transform: scaleX(-1);
+  cursor: pointer;
+}
+
+.p0 {
+  margin: 30px;
+  font-size: 100px;
+  cursor: pointer;
+}
+
+.p2{
+  margin: 30px;
+  font-size: 100px;
+  transform: rotate(180deg);
+}
+
+
+#next {background-image: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%)}
+
+#next {
+ 
+ width: 130px;
+ height: 60px;
+ text-align: center;
+ text-transform: uppercase;
+ transition: 0.5s;
+ background-size: 200% auto;
+ color: white;            
+ box-shadow: 0 0 20px #eee;
+ border-radius: 10px;
+ position: absolute;
+ top: 450px;
+ left: 50%;
+ transform: translateX(-50%);
+ cursor: pointer;
+ font-size: 25px;
+            
+}
+
+#next:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+ }
+         
+ .score {
+   position: absolute;
+   top: 70px;
+   left: 50%;
+   transform: translateX(-50%);
+   font-size: 30px;
+   font-weight: bold;
+   color: gray;
+ }
+
+ .hide {
+   display: none;
+ }
+
+#start {background-image: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%)}
+
+#start {
+ 
+ width: 150px;
+ height: 60px;
+ text-align: center;
+ text-transform: uppercase;
+ transition: 0.5s;
+ background-size: 200% auto;
+ color: white;            
+ box-shadow: 0 0 20px #eee;
+ border-radius: 10px;
+ position: absolute;
+ top: 250px;
+ left: 50%;
+ transform: translateX(-50%);
+ cursor: pointer;
+ font-size: 25px;
+            
+}
