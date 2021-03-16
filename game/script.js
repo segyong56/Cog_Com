@@ -1,13 +1,13 @@
 document.getElementById("btn1-1").onclick = function () {
-    location.href = "puzzle우주선/index.html";
+    location.href = "puzzle-spacecraft/index.html";
  };
  
  document.getElementById("btn1-2").onclick = function () {
-    location.href = "puzzle배/index.html";
+    location.href = "puzzle-ship/index.html";
  };
  
  document.getElementById("btn1-3").onclick = function () {
-    location.href = "puzzle집/index.html";
+    location.href = "puzzle-house/index.html";
  };
  
  document.getElementById("btn2-1").onclick = function () {
@@ -15,7 +15,7 @@ document.getElementById("btn1-1").onclick = function () {
  };
  
  document.getElementById("btn2-2").onclick = function () {
-    location.href = "puzzle-game4x4/index.html";
+    location.href = "puzzle-game4/index.html";
  };
 
  document.getElementById("btn3-1").onclick = function () {
