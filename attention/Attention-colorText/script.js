@@ -4,8 +4,14 @@ const signColor = document.querySelector('.color-text');
 const correctSign = document.querySelector('.correct');
 const wrongSign = document.querySelector('.wrong');
 
-let colors = ["blue", "red", "green", "yellow", "purple"];
-let nameEn =
+const colors = {
+  blue : "#2695fc",
+  red : "#f91616",
+  green : "#22ef1e",
+  yellow : "#f7fd04",
+  purple : "#9333df" };
+
+const nameEn =
 {
   "파란색": "blue",
   "빨강색": "red",
@@ -21,13 +27,15 @@ let changeInstruct;
 function resetGame() {
   correctSign.style.opacity = "0";
 
-  var changeColor = colors[Math.floor(Math.random() * 5)]
-  var koreanText = Object.keys(nameEn)
-  var changeText = koreanText[Math.floor(Math.random() * 5)]
-  var textValue = nameEn[changeText]
+  // const changeColor = colors[Math.floor(Math.random() * 5)]
+  const koreanText = Object.keys(nameEn)
+  const colorKey = Object.keys(colors)
+  const changeColor = colorKey[Math.floor(Math.random() * 5)]
+  const changeText = koreanText[Math.floor(Math.random() * 5)]
+  const textValue = nameEn[changeText]
 
   changeInstruct = instruct[Math.floor(Math.random() * 2)]
-  signColor.style.color = changeColor
+  signColor.style.color = colors[changeColor]
   signColor.innerHTML = changeText
   instructText.innerHTML = changeInstruct
 
@@ -47,15 +55,15 @@ function addClick(color, changeColor, textValue) {
 }
 
 function checkColor(color, changeColor, textValue) {
-  if (changeInstruct == "글자" && color == textValue) {
+  if (changeInstruct === "글자" && color === textValue) {
     correct++;
     correctSign.classList.add("fadeAway");
   }
-  if (changeInstruct == "색깔" && color == changeColor) {
+  if (changeInstruct === "색깔" && color === changeColor) {
     correct++;
     correctSign.classList.add("fadeAway");
   } 
-  if(color != changeColor && color != textValue) {
+  if(color !== changeColor && color !== textValue) {
     wrongSign.classList.add("fadeAway");
   }
   setTimeout(function () {

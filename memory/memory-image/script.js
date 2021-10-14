@@ -128,7 +128,7 @@ function getNewQuestion() {
   const questionIndex = availableQuestions[Math.floor(Math.random() * availableQuestions.length)]
   currentQuestion = questionIndex
   const question = document.createElement("img");
-  question.src = currentQuestion.q;
+  question.src = `./image/${currentQuestion.q}`;
   question.className = "question";
   questionBox.appendChild(question)
 
@@ -155,7 +155,7 @@ function getNewOption() {
     availableOptions.splice(index2, 1);
 
     const option = document.createElement("img");
-    option.src = currentQuestion.options[optionIndex];
+    option.src = `./image/${currentQuestion.options[optionIndex]}`;
     option.id = optionIndex;
     option.className = "option" + i;
     option.style.width = "230px";

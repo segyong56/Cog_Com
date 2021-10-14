@@ -96,7 +96,7 @@ function showQuestion () {
   array2.splice(index2, 1)
   
   const que_2 = document.createElement("div")
-  que_2.innerHTML = '<img src="' + currentque + '" alt="" class="img' + [i] + '">'
+  que_2.innerHTML = `<img src="./image/${currentque}" alt="" class="img${[i]}">`
   container.appendChild(que_2)
  }
 
@@ -123,7 +123,7 @@ function showOption () {
   array1.splice(index1, 1)
 
   const que_1 = document.createElement("div")
-  que_1.innerHTML = '<img src=' + currentOption + ' alt="dd" class = "option">';
+  que_1.innerHTML = `<img src="./image/${currentOption}" alt="dd" class = "option">`;
   que_1.className = "que_1"
   que_1.setAttribute("onclick", "checkAnswer(this)")
   questionBox.appendChild(que_1)

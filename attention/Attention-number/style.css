@@ -1,27 +1,47 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&display=swap");
 
 body {
-  width: 1450px;
-  height: 850px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #FFFDF9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.container {
+  margin-top: 60px;
+  border-radius: 30px;
+  padding: 15px 10px;
+  background: #f4f4f4;
+  box-shadow: -6px -6px 15px rgba(255, 255, 255, 0.78),
+    6px 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+.title {
+  margin-top: 60px;
+  padding: 10px 60px;
+  background: #f4f4f4;
+  box-shadow: inset -6px -6px 15px rgba(255, 255, 255, 0.78),
+    inset 6px 6px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 54px;
+  color: #8a8a8a;
+}
 
 .numbers-container {
-  position: absolute;
-  left: 300px;
-  top: 100px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  width: 700px;
-  height: 550px;
+  margin-top: 10px;
+  padding: 10px;
   text-align: center;
-  line-height: 120px;
+  
 }
 
-.number {  
+.number {
   margin: 5px;
   font-size: 3rem;
   text-align: center;
@@ -29,38 +49,38 @@ body {
   justify-content: center;
   width: 120px;
   height: 120px;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  background: #f4f4f4;
+  box-shadow: -6px -6px 15px rgba(255, 255, 255, 0.78),
+    6px 6px 16px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
-  font-family: 'Do Hyeon', sans-serif;
+  font-family: "Do Hyeon", sans-serif;
+  color: #A9A9A9;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .number:hover {
-  border: 3px solid #18A0FB;
+  color: #FFF338;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.14);
 }
 
 h3 {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  
   font-size: 30px;
 }
 
 .ended {
-position: absolute;
-width: 200px;
-height: 200px;
-left: 45%;
-top: 40%;
-font-family: 'Bai Jamjuree', sans-serif;
-background: #FFFFFF;
-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
-text-align: center;
-line-height: 200px;
-justify-content: center;
-font-size: 35px;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 45%;
+  top: 40%;
+  font-family: "Bai Jamjuree", sans-serif;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  text-align: center;
+  line-height: 200px;
+  justify-content: center;
+  font-size: 35px;
 }
-

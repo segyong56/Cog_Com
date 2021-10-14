@@ -1,124 +1,150 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background: #fffdf9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  margin-top: 150px;
+  padding: 15px 40px;
+  border-radius: 30px;
+  background: #f4f4f4;
+  box-shadow: -6px -6px 15px rgba(255, 255, 255, 0.78),
+    6px 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 150px 0px 20px 0px;
+}
+
+.color-text {
+  margin-top: 10px;
+  width: 50%;
+  padding: 10px 0px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  border-radius: 53px;
+  background: #f4f4f4;
+  box-shadow: inset -6px -6px 15px rgba(255, 255, 255, 0.78),
+    inset 6px 6px 16px rgba(0, 0, 0, 0.15);
+
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.text {
+  text-align: center;
+  padding: 10px 0px;
+  width: 50%;
+  font-size: 50px;
+  font-weight: bold;
+  border-radius: 53px;
+  background: #f4f4f4;
+  box-shadow: -6px -6px 15px rgba(255, 255, 255, 0.78),
+    6px 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.color {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 300ms;
+  box-shadow: -6px -6px 15px rgba(255, 255, 255, 0.78),
+    6px 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.color:hover {
+  transform: scale(0.9);
+}
+
+.blue {
+  background: #2695fc;
+}
+
+.red {
+  background: #f91616;
+}
+
+.green {
+  background: #22ef1e;
+}
+
+.yellow {
+  background: #f7fd04;
+}
+
+.purple {
+  background: #9333df;
+}
+
+.explain {
+  text-align: center;
+  font-weight: bold;
+  color: grey;
+}
+
+.correct {
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: none;
+  border: 15px solid rgb(38, 235, 48);
+  border-radius: 50%;
+  position: absolute;
+  top: 230px;
+  z-index: 2;
+  opacity: 0;
+}
+
+.wrong {
+  font-size: 150px;
+  align-items: center;
+  justify-content: center;
+  background-color: none;
+  color: red;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+  top: 230px;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.fadeAway {
+  animation: fadeAway 500ms;
+}
+
+@keyframes fadeAway {
+  0% {
+    opacity: 1;
   }
-  
-  body {
-    width: 100vh;
-    height: 100vh;
-    margin: 0 auto;
+  50% {
+    opacity: 1;
   }
-  .container {
-    position: relative;
-  }
-  .top {
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-     display: block;
-  }
-  
-  .color-text{
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-  }
-  
-  .text {
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-  }
-  
-  .bottom {
-    display: flex;
-    width: 700px;
-    height: 130px;
-    position: absolute;
-    top: 300px;
-    left: 50%;
-    transform: translateX(-50%);
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .color {
-    width: 100px;
-    height: 100px;
-    border-radius: 15px;
-    margin: 10px;
-    border: 3px solid black;
-    cursor: pointer;
-    transition: transform 300ms;
-  }
-  
-  .color:hover {
-    transform: scale(0.9);
-  }
-  
-  .blue {
-    background-color: Blue;
-  }
-  
-  .red {
-    background-color: red;
-  }
-  
-  .green {
-    background-color: green;
-  }
-  
-  .yellow {
-    background-color: yellow;
-  }
-  
-  .purple {
-    background-color: purple;
-  }
-  
-  .explain {
-    position: relative;
-    top: 60px;
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  .correct {
-    width: 100px;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-    background-color: none;
-    border: 15px solid rgb(38, 235, 48);
-    border-radius: 50%;
-    z-index: 2;
-    position: relative;
-    top: -120px;
-    left: 15px;
+  100% {
     opacity: 0;
   }
-  
-  .wrong {
-    font-size: 150px;
-    align-items: center;
-    justify-content: center;
-    background-color: none;
-    color: red;
-    border-radius: 50%;
-    z-index: 1;
-    position: relative;
-    top: -300px;
-    left: 20px;
-    font-weight: bold;
-    opacity: 0;
-  }
-  
-  .fadeAway{
-    animation: fadeAway 500ms;
-  }
-  @keyframes fadeAway {
-    0% {opacity: 1}
-    50% {opacity: 1}
-    100% {opacity: 0}
-  }
+}

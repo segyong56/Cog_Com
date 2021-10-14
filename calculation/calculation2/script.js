@@ -54,6 +54,7 @@ function clickEvent(answer) {
 
   } else {
     console.log("incorrect")
+    alert('다시 생각해 보세요')
     window.location.reload();
   }
 

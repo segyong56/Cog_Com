@@ -131,6 +131,6 @@ function startTimer(time){
 function showResult(){
     nextBtn.classList.add("hide");
     const scoreText = document.querySelector(".score-text");
-    let scoreTag = '<span class="score"><p>맞은 점수 : '+ userScore +'점 / 총 '+ questions.length +' 문제</p></span>';
+    let scoreTag = '<div class="score"><p>맞은 점수 : '+ userScore +'점 / 총 '+ questions.length +' 문제</p></div>';
     quiz_box.innerHTML = scoreTag;
 }

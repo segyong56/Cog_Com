@@ -1,5 +1,3 @@
-
-
 const container = document.querySelector(".container");
 const score = document.querySelector(".score")
 const startBtn = document.getElementById('start');

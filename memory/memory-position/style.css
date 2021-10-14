@@ -1,64 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&display=swap");
 
 body {
-  width: 1450px;
-  height: 850px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background: #fffdf9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.wrapper {
+  margin: 60px 0px 20px 0px;
+  border-radius: 30px;
+  padding: 20px 30px;
+  background: #f4f4f4;
+  box-shadow: -6px -6px 15px rgba(255, 255, 255, 0.78),
+    6px 6px 16px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.title {
+  background: #f4f4f4;
+  box-shadow: inset -6px -6px 15px rgba(255, 255, 255, 0.78),
+    inset 6px 6px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 54px;
+  display: flex;
+  font-size: 20px;
+  color: #9a9a9a;
+  padding: 20px 30px;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+}
 
 #card-board {
-position: absolute;
-width: 606px;
-height: 606px;
-left: calc(50% - 600px/2);
-top: 100px;
+  margin-top: 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+}
 
-background: #FFFFFF;
-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-}
-        
 .card {
-width: 150px;
-height: 150px;
-border:  1px solid black;
-border-collapse: collapse;
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  background:white;
+  box-shadow: -6px -6px 15px rgba(255, 255, 255, 0.78),
+    6px 6px 16px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
-     
+
+.card:active {
+  box-shadow: inset -6px -6px 15px rgba(255, 255, 255, 0.78),
+    inset 6px 6px 16px rgba(0, 0, 0, 0.15);
+}
+
 .hide {
-display: none;
+  display: none;
 }
 
 h3 {
   text-align: center;
-  position: relative;
-  top: 50px;
   font-size: 20px;
 }
 
-#start{ 
- position: relative;
- top: 300px;
- left: 50%;
- transform: translateX(-50%);
- font-size: 30px;
- background-image: linear-gradient(to right, #00c6ff 0%, #0072ff  51%, #00c6ff  100%);
- border: none;
- font-family: 'Bai Jamjuree', sans-serif;
- color: #FFFFFF;
- justify-content: center;
- cursor: pointer;
- z-index: 5;
- margin: 10px;
+#start {
+ 
+  font-size: 30px;
+  background-image: linear-gradient(
+    to right,
+    #00c6ff 0%,
+    #0072ff 51%,
+    #00c6ff 100%
+  );
+  border: none;
+  font-family: "Bai Jamjuree", sans-serif;
+  color: #ffffff;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 5;
+  margin: 10px;
   padding: 10px 45px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
-  background-size: 200% auto;           
+  background-size: 200% auto;
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
   display: block;
@@ -72,27 +109,30 @@ h3 {
 }
 
 #restart-btn {
-position: absolute;
-width: 226px;
-height: 56px;
-left: 612px;
-top: 750px;
-background: #18A0FB;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 15px;
-font-family: 'Bai Jamjuree', sans-serif;
-font-weight: 600;
-font-size: 30px;
-line-height: 37px;
-border: none;
-color: #FFFFFF;
-cursor: pointer;
+  width: 226px;
+  height: 56px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 40px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  background: #f4f4f4;
+  box-shadow: -6px -6px 15px rgba(255, 255, 255, 0.78),
+    6px 6px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 54px;
+  border: none;
+  cursor: pointer;
+}
+
+#restart-btn:hover {
+  color: #f0c929;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.14);
 }
 
 .text {
-  position: relative;
-  top: 50px;
-  left: 550px;
   font-size: 45px;
   font-weight: bold;
 }

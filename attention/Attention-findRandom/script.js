@@ -2,7 +2,14 @@ const container = document.querySelector(".container");
 const text = document.querySelector(".text");
 
 let div = 30;
-let colors = ["blue", "red", "green", "yellow", "purple"]
+const colors = ["blue", "red", "green", "yellow", "purple"]
+const clipPath = [
+  "polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)",
+  "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
+  "polygon(50% 0%, 0% 100%, 100% 100%)",
+  "circle(50% at 50% 50%)",
+  "inset(5% 20% 15% 10%)"
+]
 let divArray = [];
 let colorArray = [];
 let repeat;
@@ -10,9 +17,11 @@ let repeat;
 function createDiv() {
   for (let i = 0; i < div; i++) {
     const randomColor = colors[Math.floor(Math.random() * 5)]
+    const randomShape = clipPath[Math.floor(Math.random() * 5)]
     const obj = document.createElement("div")
     obj.className = "btn"
     obj.style.backgroundColor = randomColor
+    obj.style.clipPath = randomShape
     container.appendChild(obj)
     divArray.push(obj)
   }
