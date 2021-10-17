@@ -7,19 +7,36 @@ body {
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
+  background: #f4f4f4;
   position: relative;
 }
 
+
+.title {
+  width: 70%;
+  background: #f4f4f4;
+  box-shadow: inset -6px -6px 15px rgba(255, 255, 255, 0.78),
+    inset 6px 6px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 54px;
+  display: flex;
+  font-size: 20px;
+  color: #9a9a9a;
+  padding: 20px 30px;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+}
+
+
 h3 {
   text-align: center;
-  position: relative;
-  top: 50px;
   font-size: 25px;
 }
+
 .colums {
   position: absolute;
   left: 50%;
-  top: 150px;
+  top: 130px;
   transform: translateX(-50%);
   display: flex;
 }

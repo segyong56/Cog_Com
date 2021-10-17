@@ -40,8 +40,7 @@ nextBtn.addEventListener('click', () => {
     nextBtn.classList.add('hide')
     gameText.classList.add('hide2')
   } else {
-    //optionCount++;
-    console.log(optionCount)
+    
     gameText.classList.add('hide2')
     setGame();
   }
@@ -73,7 +72,7 @@ const tempArray = [];
 const optionLen = currentQuestion.option.length;
 for (let i = 0; i < optionLen; i++) {
   const option = document.createElement("img");
-  option.src = currentQuestion.option[i];
+  option.src = `./image/${currentQuestion.option[i]}`;
   option.setAttribute('data-index', i)
   option.setAttribute('draggable', 'true');
   option.className = "option" + i;

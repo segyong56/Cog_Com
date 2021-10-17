@@ -2,104 +2,94 @@
 <html lang="en">
 
 <head>
-    <title>Problem-Solving</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 80%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+      
+    </style>
 </head>
 
 <body>
-
-    <body>
-        <div class="section">
-            <input type="radio" name="slide" id="slide01" checked>
-            <input type="radio" name="slide" id="slide02">
-            <input type="radio" name="slide" id="slide03">
-            <input type="radio" name="slide" id="slide04">
-            <input type="radio" name="slide" id="slide05">
-
-
-            <div class="slidewrap">
-                <ul class="slidelist">
-                    <li>
-                        <a class="slide1-1">
-                            <span class="span1" >1</span>
-                            <img src="ps3.jpg" alt="" width="600" height="350">
-                            <button id="btn1">CLICK ME</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="slide1-2">
-                            <span class="span1" >2</span>
-                            <img src="ps2.jpg" alt="">
-                            <button id="btn2">CLICK ME</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="slide1-3">
-                            <span class="span1" >3</span>
-                            <img src="ps1.jpg" alt="">
-                            <button id="btn3">CLICK ME</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="slide1-4">
-                            <button id="btn4">CLICK ME</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="slide1-5">
-                            <button id="btn5">CLICK ME</button>
-                        </a>
-                    </li>
-                    <div class="slide-control">
-                        <div class="control01">
-                            <label for="slide01" class="left">
-                                <i class="fas fa-chevron-circle-left left"></i>
-                            </label>
-                            <label for="slide02" class="right">
-                                <i class="fas fa-chevron-circle-right right"></i>
-                            </label>
-                        </div>
-                        <div class="control02">
-                            <label for="slide01" class="left">
-                                <i class="fas fa-chevron-circle-left left"></i>
-                            </label>
-                            <label for="slide03" class="right">
-                                <i class="fas fa-chevron-circle-right right"></i>
-                            </label>
-                        </div>
-                        <div class="control03">
-                            <label for="slide02" class="left">
-                                <i class="fas fa-chevron-circle-left left"></i>
-                            </label>
-                            <label for="slide04" class="right">
-                                <i class="fas fa-chevron-circle-right right"></i>
-                            </label>
-                        </div>
-                        <div class="control04">
-                            <label for="slide03" class="left">
-                                <i class="fas fa-chevron-circle-left left"></i>
-                            </label>
-                            <label for="slide05" class="right">
-                                <i class="fas fa-chevron-circle-right right"></i>
-                            </label>
-                        </div>
-                        <div class="control05">
-                            <label for="slide04" class="left">
-                                <i class="fas fa-chevron-circle-left left"></i>
-                            </label>
-                            <label for="slide01" class="right">
-                                <i class="fas fa-chevron-circle-right right"></i>
-                            </label>
-                        </div>
-                    </div>
-                </ul>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <!-- Slides-->
+            <div class="swiper-slide">
+                <div class="card">
+                   <img src='https://images.unsplash.com/photo-1634248893766-2540ac03ba1d?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDh8TThqVmJMYlRSd3N8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60' />
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src='https://images.unsplash.com/photo-1634118931958-f1cf1f9c6156?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDMwfENEd3V3WEpBYkV3fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60' />
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src='https://images.unsplash.com/photo-1630152389714-46b8c393f555?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE5MHxDRHd1d1hKQWJFd3x8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60' />
+                </div>
             </div>
         </div>
-        <script src="script.js"></script>
-    </body>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            initialSlide: 1,
+            spaceBetween: 300,
+            speed: 600,
+            loop: !1,
+            effect: "coverflow",
+            coverflow: {
+                rotate: 0,
+                stretch: 500,
+                depth: 300,
+                modifier: 1,
+                slideShadows: !1
+            },
+            slidesPerView: 1,
+            slideToClickedSlide: !0,
+            pagination: ".swiper-pagination",
+            nextButton: ".swiper-button-next",
+            prevButton: ".swiper-button-prev",
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0
+                }
+            }
+        });
+    </script>
+</body>
 
 </html>

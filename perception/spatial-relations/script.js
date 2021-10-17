@@ -30,7 +30,7 @@ nextBtn.addEventListener("click", function () {
   }
   
 })
-console.log(icons.length)
+
 
 function createIcon() {
 

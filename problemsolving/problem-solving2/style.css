@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -7,9 +7,9 @@ body {
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
+  background: #f4f4f4;
   position: relative;
 }
-
 
 #start-btn {
   position: absolute;
@@ -32,16 +32,29 @@ body {
   box-shadow: none;
 }
 
+.title {
+  width: 60%;
+  background: #f4f4f4;
+  box-shadow: inset -6px -6px 15px rgba(255, 255, 255, 0.78),
+    inset 6px 6px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 54px;
+  display: flex;
+  font-size: 20px;
+  color: #9a9a9a;
+  padding: 20px 30px;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+}
+
 h3 {
-  position: relative;
   text-align: center;
-  top: 100px;
-  font-size: 30px;
+  justify-content: center;
 }
 
 #next-btn {
   position: absolute;
-  top: 550px;
+  top: 450px;
   left: 50%;
   transform: translateX(-50%);
   width: 180px;
@@ -70,83 +83,78 @@ h3 {
   width: 1355px;
   height: 230px;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
+  top: 150px;
+  transform: translateX(-50%);
+ 
 }
 
+.image-container > img {
+  box-shadow: -6px -6px 15px rgba(255, 255, 255, 0.78),
+    6px 6px 16px rgba(0, 0, 0, 0.15);
+}
 
 .option0 {
-width: 180px;
-height: 230px;
-border-radius: 10px;
-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-cursor: pointer;
-
+  width: 180px;
+  height: 230px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .option1 {
-width: 180px;
-height: 230px;
-border-radius: 10px;
-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-cursor: pointer;
-
+  width: 180px;
+  height: 230px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .option2 {
-
-width: 180px;
-height: 230px;
-border-radius: 10px;
-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-cursor: pointer;
-
+  width: 180px;
+  height: 230px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .option3 {
-width: 180px;
-height: 230px;
-border-radius: 10px;
-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-cursor: pointer;
-
+  width: 180px;
+  height: 230px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .option4 {
-width: 180px;
-height: 230px;
-border-radius: 10px;
-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-cursor: pointer;
-
+  width: 180px;
+  height: 230px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .option5 {
-width: 180px;
-height: 230px;
-border-radius: 10px;
-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-cursor: pointer;
-
-
+  width: 180px;
+  height: 230px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 #game-text {
   position: absolute;
-width: 191px;
-height: 60px;
-left: 629px;
-top: 197px;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 191px;
+  height: 60px;
+  font-family: Bai Jamjuree;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  /* identical to box height */
 
-font-family: Bai Jamjuree;
-font-style: normal;
-font-weight: 600;
-font-size: 48px;
-line-height: 60px;
-/* identical to box height */
-
-
-color: #000000;
+  color: #000000;
 }
 
 .hide2 {
@@ -154,20 +162,20 @@ color: #000000;
 }
 
 .quiz-over {
-position: absolute;
-width: 500px;
-height: 60px;
-left: 50%;
-transform: translateX(-50%);
-top: 197px;
-font-family: 'Do Hyeon', sans-serif;
-font-style: normal;
-font-weight: 600;
-font-size: 40px;
-text-align: center;
-line-height: 60px;
-/* identical to box height */
-color: #000000;
+  position: absolute;
+  width: 500px;
+  height: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 197px;
+  font-family: "Do Hyeon", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  line-height: 60px;
+  /* identical to box height */
+  color: #000000;
 }
 
 #restart {

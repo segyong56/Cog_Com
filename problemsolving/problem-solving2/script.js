@@ -70,7 +70,7 @@ const tempArray = [];
 const optionLen = currentQuestion.option.length;
 for (let i = 0; i < optionLen; i++) {
   const option = document.createElement("img");
-  option.src = currentQuestion.option[i];
+  option.src = `./image/${currentQuestion.option[i]}`;
   option.setAttribute('data-index', i)
   option.setAttribute('draggable', 'true');
   option.className = "option" + i;
