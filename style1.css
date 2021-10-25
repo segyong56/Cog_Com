@@ -1,88 +1,174 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
-*{
-    padding: 0;
-    margin: 0;
+@font-face {
+  font-family: 'SpoqaHanSansNeo-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html,
+body {
+  position: relative;
+  height: 100%;
 }
 
 body {
-    width: 1450px;
-    height: 1000px;
-    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
 }
-.brain {
-    font-size: 50px;
-    color: white;
-    position: absolute;
-    top: 45px;
-    left: 100px;
-  }
-  
-  .think {
-    font-size: 35px;
-    color: white;
-    position: absolute;
-    top: 50px;
-    left: 160px;
-    font-weight: bold;
-  }
-  
-  .fa-home {
-    font-size: 50px;
-    color: white;
-    position: absolute;
-    top: 50px;
-    left: 1250px;
-    cursor: pointer;
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #ffc233;
+}
+
+.logo {
+  font-family: 'Staatliches', cursive;
+  font-size: 40px;
+  padding: 0px 40px;
+  line-height: 80px;
+}
+
+.swiper {
+
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 350px;
+  height: 500px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: white;
+
+}
+
+
+
+.image-box {
+  width: 100%;
+  height: 200px;
+}
+
+.lower-box {
+  font-family: 'SpoqaHanSansNeo-Regular';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 55%;
+  border-radius: 40px 40px 20px 20px;
+  color: white;
+  background: #f4f4f4;
+  box-shadow: -6px -6px 15px rgba(255, 255, 255, 0.78),
+      6px 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+#box-1 {
+  background-color: #FC5404;
+}
+
+#box-2 {
+  background-color: #F9B208;
+}
+
+#box-3 {
+  background-color: #FEE440;
+}
+
+#box-4 {
+  background-color: #00BD56;
+}
+
+#box-5 {
+  background-color: #207DFF;
+}
+
+#box-6 {
+  background-color: #BF81FF;
+}
+
+
+.title-box {
+  font-size: 28px;
+  text-align: center;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.description-box {
+  padding: 15px 40px;
+
+}
+
+.btn-box>a {
+  margin-top: 10px;
+  padding: 10px 45px;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+
+}
+
+.btn-box>a:hover {
+  animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+  0% {
+      text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   }
 
-  .container {
-      position: absolute;
-      top: 200px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 1200px;
-      height: 700px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
+  100% {
+      text-shadow: 0px 4px 10px #F7FD04;
   }
+}
 
-  .front {
-    position: relative;
-    left: 50px;
-    width: 200px;
-    height: 300px;
-    border: 3px solid white;
-    border-radius: 34px 3px 0 0;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
+img {
+  width: 300px;
+  height: 250px;
+  object-fit: contain;
+}
 
-  h1{
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    position: relative;
-    color: white;
-    top:70px;
-  }
+.nav-box {
+  display: fixed;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 
-  .click {
-    text-decoration: none;
-    padding: 10px;
-    border: 3px solid white;
-    color: black;
-    border-radius: 10px;
-    position: relative;
-    top: 170px;
-    left: 40px;
-    cursor: pointer;
-    font-size: 25px;
-    font-weight: bold;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
+  z-index: 2;
+  text-align: center;
+  line-height: 100px;
+  font-size: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
 
-  .click:hover {
-    box-shadow: none;
-  }
+.home-icon>a {
+  color: #EEF2F5;
+}
+
+.home-icon>a:hover {
+  color: #D5D5D5;
+}

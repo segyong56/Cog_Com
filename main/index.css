@@ -1,6 +1,13 @@
-body{
-  color: #231F20;
-  background-color: #EFE6DF;
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #231f20;
+  background-color: #fffdf9;
 }
 
 path {
@@ -8,7 +15,181 @@ path {
   stroke-dashoffset: 7150;
 }
 
-svg{
+svg {
   width: 90vw;
-  margin: 5vw 0 15vw 5vw;
+  margin: 0 0 15vw 5vw;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #ffc233;
+}
+
+.logo {
+  font-family: 'Staatliches', cursive;
+  font-size: 40px;
+  padding: 0px 40px;
+  line-height: 80px;
+}
+
+.section-1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+
+.main-title-box {
+  width: 50%;
+  height: 90%;
+}
+
+.main-brain-image {
+  width: 50%;
+  height: 90%;
+  
+}
+
+.title {
+  font-size : 60px;
+  font-family: 'Staatliches', cursive;
+  padding: 0px 0px 0px 80px;
+}
+
+.t-1 {
+  opacity: 0;
+  animation: showTitle 1s 0.5s forwards;
+}
+
+.t-2 {
+  opacity: 0;
+  animation: showTitle 1s 1s forwards;
+}
+
+@keyframes showTitle {
+
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+}
+
+.main-brain-image > img {
+  width: 100%;
+  height: 100%;
+}
+
+.section-2 {
+  position: absolute;
+  z-index: -1;
+}
+
+.section-3 {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+
+
+
+.startBtn {
+  font-size: 30px;
+  margin-top: 50px;
+  padding: 0px 0px 0px 80px;
+  opacity: 0;
+  animation: showTitle 1s 2s forwards;
+}
+
+html {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+	margin: 0;
+	background-color: #fffdf9;
+}
+div, section, header, footer, p, h1, h2 {
+	box-sizing: border-box;
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+video {
+	width: 50%;
+	
+}
+
+.global {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.global-width {
+	max-width: 620px;
+	padding: 0 1rem;
+}
+
+.scroll-graphic {
+	position: sticky;
+	top: 0;
+	height: 100vh;
+}
+
+.graphic-item {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.visible {
+	opacity: 1;
+}
+
+.scene-img {
+	width: 50%;
+	padding: 0px 20px;
+	max-height: 100vh;
+}
+
+.scroll-text {
+	position: relative;
+}
+
+.step {
+	background: rgba(255, 255, 255, 0.8);
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+	font-size: 17px;
+	margin-left: 10vh;
+	margin-bottom: 60vh;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px;
+}
+
+.strong {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.notice {
+	font-size: 20px;
+	font-weight: bold;
 }

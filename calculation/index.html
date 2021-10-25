@@ -2,108 +2,297 @@
 <html lang="en">
 
 <head>
-    <title>Calculation</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <meta charset="utf-8" />
+    <title>Calculation ability</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
+    <!-- Demo styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s;
+        }
+
+        .slide {
+            width: 45%;
+            height: 60%;
+            background-color: #fffdf9;
+            box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.5),
+                6px 6px 16px rgba(0, 0, 0, 0.15);
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
+        }
+
+        .right-box {
+            width: 20%;
+            height: 100%;
+            padding: 0px 50px;
+            margin-top: 100px;
+        }
+
+        .num-sign {
+            font-family: 'Fugaz One', cursive;
+            font-size: 130px;
+            text-align: center;
+        }
+
+        .description-box {
+            font-size: 15px;
+            color: grey;
+        }
+
+        .image-box {
+            margin-right: 20px;
+            margin-top: 30px;
+
+        }
+
+        img {
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+            object-fit: contain;
+
+        }
+
+        .play-btn {
+            margin-top: 20px;
+            border: 4px solid #f3f3f3;
+            padding: 15px 60px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 20px;
+            background: #f4f4f4;
+            box-shadow: -6px -6px 15px rgba(255, 255, 255, 0.78),
+                6px 6px 16px rgba(0, 0, 0, 0.15);
+            border-radius: 54px;
+            border: none;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .play-btn:hover {
+            color: #F0C929;
+            text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.14);
+        }
+
+        .swiper-pagination {
+            margin: 30px 0px;
+        }
+
+        .swiper-pagination-bullet {
+            font-size: 50px;
+            padding: 15px;
+            background: #f4f4f4;
+            box-shadow: -6px -6px 15px rgba(255, 255, 255, 0.78),
+                6px 6px 16px rgba(0, 0, 0, 0.75);
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #F0C929;
+        }
+
+        @media screen and (max-width: 1500px) {
+            img {
+                width: 100%;
+            }
+
+            .slide {
+                width: 65%;
+                height: 80%;
+            }
+        }
+    </style>
 </head>
 
 <body>
-
-    <body>
-        <div class="section">
-            <input type="radio" name="slide" id="slide01" checked>
-            <input type="radio" name="slide" id="slide02">
-            <input type="radio" name="slide" id="slide03">
-            <input type="radio" name="slide" id="slide04">
-            <input type="radio" name="slide" id="slide05">
-
-
-            <div class="slidewrap">
-                <ul class="slidelist">
-                    <li>
-                        <a class="slide1-1">
-                            <span class="span1" >1</span>
-                            <img src="cal-basic.jpg" alt="">
-                            <button id="btn1">CLICK ME</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="slide1-2">
-                            <span class="span1" >2</span>
-                            <img src="cal-time.jpg" alt="">
-                            <button id="btn2">CLICK ME</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="slide1-3">
-                            <span class="span1" >3</span>
-                            <img src="cal-price.jpg" alt="">
-                            <button id="btn3">CLICK ME</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="slide1-4">
-                            <span class="span1" >4</span>
-                            <img src="cal-day.jpg" alt="">
-                            <button id="btn4">CLICK ME</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="slide1-5">
-                            <span class="span1" >5</span>
-                            <img src="cal-conti.jpg" alt="">
-                            <button id="btn5">CLICK ME</button>
-                        </a>
-                    </li>
-                    <div class="slide-control">
-                        <div class="control01">
-                            <label for="slide01" class="left">
-                                <i class="fas fa-chevron-circle-left left"></i>
-                            </label>
-                            <label for="slide02" class="right">
-                                <i class="fas fa-chevron-circle-right right"></i>
-                            </label>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <!-- Slides-->
+            <div class="swiper-slide">
+                <div class="slide">
+                    <div class="right-box">
+                        <div class="num-sign">
+                            <span class='sign'>01</span>
                         </div>
-                        <div class="control02">
-                            <label for="slide01" class="left">
-                                <i class="fas fa-chevron-circle-left left"></i>
-                            </label>
-                            <label for="slide03" class="right">
-                                <i class="fas fa-chevron-circle-right right"></i>
-                            </label>
+                        <div class="description-box">
+                            <p>문제해결능력에서 우선순위를 파악하는 능력을 향상시킬 수 있는
+                                섞여 있는 카드를 일을 순서대로 다시 정렬하는 훈련입니다.
+                                훈련을 통해 어떤 일이 먼저일어났는지 그 다음 일은 어떤 순서로 일어날 지에 대해서 생각해보세요.</p>
                         </div>
-                        <div class="control03">
-                            <label for="slide02" class="left">
-                                <i class="fas fa-chevron-circle-left left"></i>
-                            </label>
-                            <label for="slide04" class="right">
-                                <i class="fas fa-chevron-circle-right right"></i>
-                            </label>
-                        </div>
-                        <div class="control04">
-                            <label for="slide03" class="left">
-                                <i class="fas fa-chevron-circle-left left"></i>
-                            </label>
-                            <label for="slide05" class="right">
-                                <i class="fas fa-chevron-circle-right right"></i>
-                            </label>
-                        </div>
-                        <div class="control05">
-                            <label for="slide04" class="left">
-                                <i class="fas fa-chevron-circle-left left"></i>
-                            </label>
-                            <label for="slide01" class="right">
-                                <i class="fas fa-chevron-circle-right right"></i>
-                            </label>
+                        <div class="btn-box">
+                            <button id="btn1" class="play-btn">play</button>
                         </div>
                     </div>
-                </ul>
+                    <div class="left-box">
+                        <div class="image-box">
+                            <img src="../_image/calculate/cal1.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide">
+                    <div class="right-box">
+                        <div class="num-sign">
+                            <span class='sign'>02</span>
+                        </div>
+                        <div class="description-box">
+                            <p>문제해결능력에서 우선순위를 파악하는 능력을 향상시킬 수 있는
+                                섞여 있는 카드를 일을 순서대로 다시 정렬하는 훈련입니다.
+                                훈련을 통해 어떤 일이 먼저일어났는지 그 다음 일은 어떤 순서로 일어날 지에 대해서 생각해보세요.</p>
+                        </div>
+                        <div class="btn-box">
+                            <button id="btn2" class="play-btn">play</button>
+                        </div>
+                    </div>
+                    <div class="left-box">
+                        <div class="image-box">
+                            <img src="../_image/calculate/cal3.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide">
+                    <div class="right-box">
+                        <div class="num-sign">
+                            <span class='sign'>03</span>
+                        </div>
+                        <div class="description-box">
+                            <p>하노이 탑을 푸는 훈련입니다. 작은 원반 위로 큰 원판을 이동할 수 없습니다. 가장 위의 원판만 이동 가능합니다.
+                                한번에 하나만 이동가능한 규칙을 가지고 왼쪽에 있는 원판들을 오른쪽으로 이동시켜 보세요
+                            </p>
+                        </div>
+                        <div class="btn-box">
+                            <button id="btn3" class="play-btn">play</button>
+                        </div>
+                    </div>
+                    <div class="left-box">
+                        <div class="image-box">
+                            <img src="../_image/calculate/cal2.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide">
+                    <div class="right-box">
+                        <div class="num-sign">
+                            <span class='sign'>04</span>
+                        </div>
+                        <div class="description-box">
+                            <p>하노이 탑을 푸는 훈련입니다. 작은 원반 위로 큰 원판을 이동할 수 없습니다. 가장 위의 원판만 이동 가능합니다.
+                                한번에 하나만 이동가능한 규칙을 가지고 왼쪽에 있는 원판들을 오른쪽으로 이동시켜 보세요
+                            </p>
+                        </div>
+                        <div class="btn-box">
+                            <button id="btn4" class="play-btn">play</button>
+                        </div>
+                    </div>
+                    <div class="left-box">
+                        <div class="image-box">
+                            <img src="../_image/calculate/cal4.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide">
+                    <div class="right-box">
+                        <div class="num-sign">
+                            <span class='sign'>05</span>
+                        </div>
+                        <div class="description-box">
+                            <p>하노이 탑을 푸는 훈련입니다. 작은 원반 위로 큰 원판을 이동할 수 없습니다. 가장 위의 원판만 이동 가능합니다.
+                                한번에 하나만 이동가능한 규칙을 가지고 왼쪽에 있는 원판들을 오른쪽으로 이동시켜 보세요
+                            </p>
+                        </div>
+                        <div class="btn-box">
+                            <button id="btn5" class="play-btn">play</button>
+                        </div>
+                    </div>
+                    <div class="left-box">
+                        <div class="image-box">
+                            <img src="../_image/calculate/cal5.png" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <script src="script.js"></script>
-    </body>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '"></span>';
+                },
+            },
+        });
+
+
+        document.getElementById("btn1").onclick = function () {
+            location.href = "calculation-norandom/index.html";
+        };
+
+        document.getElementById("btn2").onclick = function () {
+            location.href = "calculation-time/index.html";
+        };
+
+        document.getElementById("btn3").onclick = function () {
+            location.href = "calculation-price/index.html";
+        };
+
+        document.getElementById("btn4").onclick = function () {
+            location.href = "calculation-day/index.html";
+        };
+
+        document.getElementById("btn5").onclick = function () {
+            location.href = "calculation2/index.html";
+        };
+    </script>
+</body>
 
 </html>

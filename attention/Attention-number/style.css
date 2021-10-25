@@ -56,7 +56,7 @@ body {
   font-family: "Do Hyeon", sans-serif;
   color: #A9A9A9;
   cursor: pointer;
-  transition: all 0.3s;
+  /* transition: all 0.3s; */
 }
 
 .number:hover {
