@@ -1,4 +1,6 @@
 # Cognition Program for Therapist
+<img width="1924" alt="Category " src="https://user-images.githubusercontent.com/80687195/139001123-b7564347-8f9b-4e47-b358-2cbc7529006d.png">
+
 
 
 
@@ -13,4 +15,3 @@
 
 
 
-<img width="1924" alt="Category " src="https://user-images.githubusercontent.com/80687195/139001123-b7564347-8f9b-4e47-b358-2cbc7529006d.png">
