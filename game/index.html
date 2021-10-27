@@ -2,83 +2,222 @@
 <html lang="en">
 
 <head>
-    <title>Game</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <meta charset="utf-8" />
+    <title>Problem solving</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
+    <!-- Demo styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slide {
+            width: 45%;
+            height: 60%;
+            background-color: #fffdf9;
+            box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.5),
+                6px 6px 16px rgba(0, 0, 0, 0.15);
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .right-box {
+            width: 30%;
+            height: 100%;
+            margin-top: 100px;
+        }
+
+        .num-sign {
+            font-family: 'Fugaz One', cursive;
+            font-size: 130px;
+            text-align: center;
+        }
+
+        .description-box {
+            font-size: 15px;
+            color: grey;
+        }
+
+        .image-box {
+            margin-right: 20px;
+        }
+
+        img {
+            max-width: 500px;
+            height: 400px;
+            border-radius: 20px;
+        }
+
+        .swiper-pagination {
+            margin: 30px 0px;
+        }
+
+        .swiper-pagination-bullet {
+            font-size: 50px;
+            padding: 15px;
+            background: #f4f4f4;
+            box-shadow: -6px -6px 15px rgba(255, 255, 255, 0.78),
+                6px 6px 16px rgba(0, 0, 0, 0.75);
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #F0C929;
+        }
+
+        .title-box {
+            font-size: 25px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .btn-box {
+            margin-top: 10px;
+        }
+
+        .btn-box>button {
+            width: 150px;
+            height: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: white;
+            border: 2px solid black;
+        }
+
+        @media screen and (max-width: 1500px) {
+            img {
+                width: 100%;
+            }
+
+            .slide {
+                width: 65%;
+                height: 80%;
+            }
+        }
+    </style>
 </head>
 
 <body>
-
-    <body>
-        <div class="section">
-            <input type="radio" name="slide" id="slide01" checked>
-            <input type="radio" name="slide" id="slide02">
-            <input type="radio" name="slide" id="slide03">
-
-
-            <div class="slidewrap">
-                <ul class="slidelist">
-                    <li>
-                        <a class="slide1-1">
-                            <span class="span1" >1</span>
-                            <img src="tangram.png" alt="">
-                            <span class="text">칠교퍼즐</span>
-                            <button id="btn1-1" class="btn1">우주선</button>
-                            <button id="btn1-2" class="btn1">배</button>
-                            <button id="btn1-3" class="btn1">집</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="slide1-2">
-                            <span class="span1" >2</span>
-                            <span class="text">그림퍼즐</span>
-                            <img src="puzzle.png" alt="" >
-                            <button id="btn2-1" class="btn1">3 X 3</button>
-                            <button id="btn2-2" class="btn1">4 X 4</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="slide1-3">
-                            <span class="span1" >3</span>
-                            <img src="pixel-art.png" alt="">
-                            <span class="text">Picker-Color</span>
-                            <button id="btn3-1" class="btn1">10 X 10</button>
-                            <button id="btn3-2" class="btn1">11 X 11</button>
-                        </a>
-                    </li>
-                    <div class="slide-control">
-                        <div class="control01">
-                            <label for="slide01" class="left">
-                                <i class="fas fa-chevron-circle-left left"></i>
-                            </label>
-                            <label for="slide02" class="right">
-                                <i class="fas fa-chevron-circle-right right"></i>
-                            </label>
-                        </div>
-                        <div class="control02">
-                            <label for="slide01" class="left">
-                                <i class="fas fa-chevron-circle-left left"></i>
-                            </label>
-                            <label for="slide03" class="right">
-                                <i class="fas fa-chevron-circle-right right"></i>
-                            </label>
-                        </div>
-                        <div class="control03">
-                            <label for="slide02" class="left">
-                                <i class="fas fa-chevron-circle-left left"></i>
-                            </label>
-                            <label for="slide01" class="right">
-                                <i class="fas fa-chevron-circle-right right"></i>
-                            </label>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <!-- Slides-->
+            <div class="swiper-slide">
+                <div class="slide">
+                    <div class="right-box">
+                        <div class="num-sign">
+                            <span class='sign'>01</span>
                         </div>
                     </div>
-                </ul>
+                    <div class="left-box">
+                        <div class="image-box">
+                            <img src="tangram.png" alt="">
+                            <div class="title-box">
+                                <span class="text">칠교퍼즐</span>
+                            </div>
+                            <div class="btn-box">
+                                <button id="btn1-1" class="btn1">우주선</button>
+                                <button id="btn1-2" class="btn1">배</button>
+                                <button id="btn1-3" class="btn1">집</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="swiper-slide">
+                <div class="slide">
+                    <div class="right-box">
+                        <div class="num-sign">
+                            <span class='sign'>02</span>
+                        </div>
+                    </div>
+                    <div class="left-box">
+                        <div class="image-box">
+                            <img src="puzzle.png" alt="">
+                            <div class="title-box">
+                                <span class="text">그림퍼즐</span>
+                            </div>
+                            <div class="btn-box">
+                                <button id="btn2-1" class="btn1">3 X 3</button>
+                                <button id="btn2-2" class="btn1">4 X 4</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <script src="script.js"></script>
-    </body>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '"></span>';
+                },
+            },
+        });
+
+        document.getElementById("btn1-1").onclick = function () {
+            location.href = "puzzle-spacecraft/index.html";
+        };
+
+        document.getElementById("btn1-2").onclick = function () {
+            location.href = "puzzle-ship/index.html";
+        };
+
+        document.getElementById("btn1-3").onclick = function () {
+            location.href = "puzzle-house/index.html";
+        };
+
+        document.getElementById("btn2-1").onclick = function () {
+            location.href = "puzzle-game3x3/index.html";
+        };
+
+        document.getElementById("btn2-2").onclick = function () {
+            location.href = "puzzle-game4/index.html";
+        };
+
+    </script>
+</body>
 
 </html>

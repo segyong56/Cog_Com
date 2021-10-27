@@ -26,6 +26,11 @@ function createGrid() {
 }
 
 function createImg() {
+
+  const grids = document.querySelectorAll('.grid')
+  grids.forEach((el) => {
+    el.style.backgroundColor = "white";
+  })
     const totalImage = images.length;
   for (let i = 0; i < totalImage; i++) {
     availableImage.push(images[i])

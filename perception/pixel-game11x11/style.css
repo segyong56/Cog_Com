@@ -1,100 +1,88 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&display=swap");
 
 /*font-family: 'Baloo 2', cursive;
 //font-family: 'Bai Jamjuree', sans-serif;
 font-family: 'Do Hyeon', sans-serif;
 */
 body {
-  width: 1450px;
-  height: 850px;
-}
-
-.logo {
-position: absolute;
-width: 485px;
-height: 44px;
-left: 53px;
-top: 43px;
-font-family: 'Baloo 2', cursive;
-font-style: normal;
-font-weight: normal;
-font-size: 48px;
-line-height: 76px;
-
-color: rgba(0, 0, 0, 0.72);
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .game {
-position: absolute;
-width: 212px;
-height: 41px;
-left: 53px;
-top: 104px;
-font-family: 'Bai Jamjuree', sans-serif;
-font-style: normal;
-font-weight: 600;
-font-size: 36px;
-line-height: 45px;
-color: #8A9397;
+  position: absolute;
+  width: 212px;
+  height: 41px;
+  left: 53px;
+  top: 104px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  color: #8a9397;
+}
+
+.game-box {
+  display: flex;
 }
 
 .grid-container {
-display: grid;
-grid-template-columns: repeat(11, 1fr);
-position: absolute;
-width: 590px;
-height: 590px;
-left: 770px;
-top: 200px;
-cursor: pointer;
+  margin-left: 15px;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  width: 590px;
+  height: 590px;
+  cursor: pointer;
 }
 
 .image-co {
-position: absolute;
-width: 580px;
-height: 580px;
-top: 200px;
-left: 120px;
-border: 1px solid black;
+  width: 580px;
+  height: 580px;
+  border: 1px solid black;
+}
+
+.color-box {
+  margin-top: 100px;
+  width: 100%;
 }
 
 .color-picker {
-position: absolute;
-width: 200px;
-height: 38px;
-left: 670px;
-top: 49px;
-font-family: 'Baloo 2', cursive;
-font-style: normal;
-font-weight: 600;
-font-size: 30px;
-line-height: 37px;
-/* identical to box height */
-color: #000000;
+  margin: auto;
+  width: 200px;
+  height: 38px;
+  font-family: "Baloo 2", cursive;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  /* identical to box height */
+  color: #000000;
 }
 
-.next-btn{
-position: absolute;
-width: 226px;
-height: 50px;
-left: 632px;
-top: 800px;
-border: none;
-background: #18A0FB;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 15px;
-font-family: Bai Jamjuree;
-font-style: normal;
-font-weight: 600;
-font-size: 25px;
-line-height: 37px;
-color: #FFFFFF;
+.next-btn {
+  width: 226px;
+  height: 50px;
+  border: none;
+  background: #18a0fb;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  font-family: Bai Jamjuree;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 37px;
+  color: #ffffff;
 }
 
-.grid{
+.grid {
   width: 50px;
   height: 50px;
   border: 0.5px solid black;
@@ -102,10 +90,11 @@ color: #FFFFFF;
 }
 
 .controls-colors {
+  margin: 10px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
+  
 }
 
 .controls-color {
@@ -120,4 +109,8 @@ color: #FFFFFF;
 .image {
   width: 580px;
   height: 580px;
+}
+
+.btn-box {
+  margin: 15px 0px;
 }

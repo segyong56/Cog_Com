@@ -58,6 +58,10 @@ header {
 
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
 
 
 .image-box {

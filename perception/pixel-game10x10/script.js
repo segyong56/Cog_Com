@@ -17,15 +17,22 @@ createImg();
 
 
 function createGrid() {
+
   for (let i = 0; i < grid; i++){
     const div = document.createElement("div");
     div.id = i
     div.className = "grid";
     gridContainer.appendChild(div)
   }
+
 }
 
 function createImg() {
+
+  const grids = document.querySelectorAll('.grid')
+  grids.forEach((el) => {
+    el.style.backgroundColor = "white"
+  })
     const totalImage = images.length;
   for (let i = 0; i < totalImage; i++) {
     availableImage.push(images[i])
