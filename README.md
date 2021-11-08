@@ -2,9 +2,6 @@
 <img width="1924" alt="Category " src="https://user-images.githubusercontent.com/80687195/139001123-b7564347-8f9b-4e47-b358-2cbc7529006d.png">
 
 
-![unnamed](https://user-images.githubusercontent.com/80687195/139439951-67fc2e64-33b2-467f-a21c-6cf1a65f1d13.jpeg)
-
-
 
 ## 인지훈련이란 ?
 
@@ -16,6 +13,13 @@
 
 ## CONTENT
 ### 🎯 집중력 훈련
+
+
+https://user-images.githubusercontent.com/80687195/140790570-b5f2476c-6fbb-42d0-bf8d-3d70ba90fe90.mp4
+
+
+
+
 - 섞여있는 숫자 순서대로 찾기
 - 섞여있는 숫자와 자음을 교대로 순서대로 찾기
 - 색깔과 글자를 빠르게 구분하여 맞추기
