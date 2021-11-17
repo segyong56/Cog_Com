@@ -45,6 +45,7 @@
 
 ### 🎯 시지각 훈련
 💎 Visual Discrimination 
+
 ![ezgif com-gif-maker (20)](https://user-images.githubusercontent.com/80687195/142224623-7e6bee09-8c09-4e24-9aec-66ec47e5d8c3.gif)
 
 💎 Visual closure
