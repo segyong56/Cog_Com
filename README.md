@@ -129,14 +129,15 @@
 
 
 ### 🎯 문제해결력 훈련
-- 섞여있는 일 순서 카드를 일의 순서대로 카드 나열하기
+💎 **섞여있는 일 순서 카드를 일의 순서대로 카드 나열하기**
 ![ezgif com-gif-maker (11)](https://user-images.githubusercontent.com/80687195/142225501-e9f345e2-fcd5-46ae-b0c4-5280b3a24c8c.gif)
 
 
-- 섞여있는 그림을 순서대로 나열하기
+💎 **섞여있는 그림을 순서대로 나열하기**
 
 
-- 하노이 탑 게임
+💎 **하노이 탑 게임**
+
 ![ezgif com-gif-maker (10)](https://user-images.githubusercontent.com/80687195/142225485-51b57c39-c511-477f-b397-60a5c1c080c5.gif)
 
 ### 🎯 게임
