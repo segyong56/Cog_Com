@@ -48,6 +48,7 @@
 ![ezgif com-gif-maker (19)](https://user-images.githubusercontent.com/80687195/142224607-d44e0dd2-8df4-422f-a1fe-4fed38abdee4.gif)
 
 - Spatial Relations
+
 ![ezgif com-gif-maker (17)](https://user-images.githubusercontent.com/80687195/142224582-f4b9b36b-7a6b-4836-8b89-370cac31015f.gif)
 
 
@@ -68,32 +69,40 @@
 
 ![ezgif com-gif-maker (29)](https://user-images.githubusercontent.com/80687195/142225266-bb8d7762-ae40-429b-b275-07b10407eafe.gif)
 
-- 위칙기억
+- 위치기억
+
 ![ezgif com-gif-maker (27)](https://user-images.githubusercontent.com/80687195/142225349-9e62003c-b85d-40f1-9222-b1858205f9dd.gif)
 
 
 - 숫자가 나오는 순서를 기억한 후 나오는 순서대로 숫자찾기
+
 ![ezgif com-gif-maker (26)](https://user-images.githubusercontent.com/80687195/142225302-d129ec6f-ef9e-455c-8842-7d4e578b4050.gif)
 
 
 ### 🎯 계산력 훈련
 - 시간 계산하기
+
 ![ezgif com-gif-maker (15)](https://user-images.githubusercontent.com/80687195/142224460-1867693a-738d-436f-8f2d-6d9f40e2f2a9.gif)
 
 
 - 날짜 계산하기
+
 ![ezgif com-gif-maker (13)](https://user-images.githubusercontent.com/80687195/142224499-2d76ad95-c8fb-4830-8d2a-7d980c3e9b1f.gif)
 
 
 - 가격 계산하기
+
 ![ezgif com-gif-maker (14)](https://user-images.githubusercontent.com/80687195/142224480-fe8bce1d-3f30-494b-819e-7ff2deebfbf9.gif)
 
 
 - 숫자 계산하기
+
 ![ezgif com-gif-maker (16)](https://user-images.githubusercontent.com/80687195/142224428-00546c95-1534-4d93-9b06-d70cb857768f.gif)
 
 
 - 계속적으로 계산하기
+
+
  ![ezgif com-gif-maker (12)](https://user-images.githubusercontent.com/80687195/142223565-854c660c-1f77-4195-8a4e-6e4d0364d9a6.gif)
 
 
