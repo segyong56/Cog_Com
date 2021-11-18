@@ -48,23 +48,31 @@
 
 ![ezgif com-gif-maker (20)](https://user-images.githubusercontent.com/80687195/142224623-7e6bee09-8c09-4e24-9aec-66ec47e5d8c3.gif)
 
+👉 빠르게 시각적 정보를 인지하여 보기와 똑같은 그림을 찾는 훈련입니다.
+
+
 💎 Visual closure
 
+⚙️ 개발중 ⚙️
 
-
-💎 Figure Ground
+💎 [전경배경구분, Figure Ground]
 
 ![ezgif com-gif-maker (19)](https://user-images.githubusercontent.com/80687195/142224607-d44e0dd2-8df4-422f-a1fe-4fed38abdee4.gif)
 
-💎 Spatial Relations
+👉 무수한 여러 자극 중에서 어떤 특정한 것을 선택할 때 작용하는 능력, 즉, 여러가지 물체가 펼쳐져있는 책상위에서 내가 원하는 사물(예, 연필)을 찾는 능력을 말합니다. 
+
+💎 [공간지각, Spatial Relations]
 
 ![ezgif com-gif-maker (17)](https://user-images.githubusercontent.com/80687195/142224582-f4b9b36b-7a6b-4836-8b89-370cac31015f.gif)
 
+👉 관계된 둘 이상의 문체의 위치 및 물체의 상호간의 위치, 즉 복수물의 상호관계를 지각하는 능력입니다.
 
-💎 Position in place
+
+💎 [공간지각, Position in place]
 
 ![ezgif com-gif-maker (18)](https://user-images.githubusercontent.com/80687195/142224597-7138b579-c6c0-4420-9f65-ab113174135c.gif)
 
+👉 물체가 있는 공간과 관찰자와의 관계를 지각하는 능력 또는 공간 내의 위치를 인지하는 능력입니다. 옆에 그림을 보고 똑같은 위치에 색깔을 넣으면서 공간내의 위치감각을 훈련하는 훈련입니다. 
 
 ### 🎯 기억력 훈련
 💎 **사물이름 찾기 훈련**
