@@ -1,7 +1,9 @@
-# Cognition Program for Therapist
+# Cognition Program for Occupational Therapist(OT)
 <img width="1924" alt="Category " src="https://user-images.githubusercontent.com/80687195/139001123-b7564347-8f9b-4e47-b358-2cbc7529006d.png">
 
+## 프로그램을 만들게 된 동기
 
+작업치료사(OT)로 일하면서 환자분들을 위한 인지훈련 프로그램을 만들면 좋겠다고 생각하게 되어 만들게 되었습니다.
 
 ## 인지훈련이란 ?
 
