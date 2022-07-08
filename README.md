@@ -1,7 +1,10 @@
 # Cognition Program for Occupational Therapist(OT)
 <img width="1924" alt="Category " src="https://user-images.githubusercontent.com/80687195/139001123-b7564347-8f9b-4e47-b358-2cbc7529006d.png">
 
-follow up : https://www.neofect.com/kr/com-cog
+# website 
+https://cog-program.vercel.app/
+
+*follow up : https://www.neofect.com/kr/com-cog
 ## 인지훈련이란 ?
 
 먼저, 인지와 지각기능은 일상생활 환경 속에서 다양한 자극을 받아들이고, 상황을 판단, 결정하며, 자신의 처한 환경에 적응하는 능력으로 인간이 하나의 독립된 인격체로 살아가는 데 꼭 필요한 기능입니다.
