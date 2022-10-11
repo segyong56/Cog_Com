@@ -1,4 +1,4 @@
-# Cognition Program for Occupational Therapist(OT)
+# Cognition Program for Occupational Therapist(OT)_ 디지털 치료제
 <img width="1924" alt="Category " src="https://user-images.githubusercontent.com/80687195/139001123-b7564347-8f9b-4e47-b358-2cbc7529006d.png">
 
 # website 
